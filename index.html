@@ -1,16 +1,162 @@
-<html>
-    <head>
-        <title> my document</title>
-    </head>
-    <body>
-        <center>
-        <h1> selamat datang di halaman saya </h1>
-        </center>
-        <hr>
-        <center>
-        <h2> Lionel messi </h2>
-        </center>
-        <img src="messi.JPG" alt="foto prfil"> <hr>
-        <a href="index.html" >home</a> <a href="contact.html" >kontak</a> <a href="about.html" >tentang</a>
-    </body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Lionel Messi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dff6ff, #ffffff);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00a8e8, #0077b6);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #0077b6;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        /* Tempat untuk 2 foto */
+        .foto-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .foto {
+            width: 350px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid #00a8e8;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .foto:hover {
+            transform: scale(1.03);
+        }
+
+        .deskripsi {
+            margin-top: 25px;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        nav {
+            margin-top: 30px;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #0077b6;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #023e8a;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            background: #023e8a;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Selamat Datang di Halaman Saya</h1>
+        <p>Website Profil Lionel Messi</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Lionel Messi</h2>
+
+            <!-- TEMPAT FOTO 1 DAN FOTO 2 -->
+            <div class="foto-container">
+
+                <!-- FOTO 1 -->
+                <img src="ibnu.jpeg" alt="Foto Lionel Messi" class="foto">
+
+                <!-- FOTO 2 -->
+                <img src="ragil.jpeg" alt="Foto Lionel Messi 2" class="foto">
+
+            </div>
+
+            <div class="deskripsi">
+                <p>
+                    Lionel Messi adalah salah satu pemain sepak bola terbaik
+                    sepanjang masa. Ia dikenal karena kemampuan menggiring bola,
+                    mencetak gol, memberikan assist, dan kreativitasnya di lapangan.
+                </p>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Kontak</a>
+                <a href="about.html">Tentang</a>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Website Saya | Lionel Messi</p>
+    </footer>
+
+</body>
 </html>
