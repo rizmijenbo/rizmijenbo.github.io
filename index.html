@@ -1,16 +1,120 @@
-<html>
-    <head>
-        <title> my document</title>
-    </head>
-    <body>
-        <center>
-        <h1> selamat datang di halaman saya </h1>
-        </center>
-        <hr>
-        <center>
-        <h2> Lionel messi </h2>
-        </center>
-        <img src="messi.JPG" alt="foto prfil">
-        <a href="index.html" >home</a> <a href="contact.html" >kontak</a> <a href="about.html" >tentang</a>
-    </body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rizmi — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Portfolio<span>.</span></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="index.html#projects">PROJECTS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <label for="nav-toggle" class="hamburger" aria-label="Buka menu"><span></span><span></span><span></span></label>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="index.html#projects">PROJECTS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</header>
+<br><br>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="hero-line"></div>
+        <div>
+          <p class="eyebrow-role">Welcome to my portofolio</p>
+          <h1 class="hero-name">Hi, I'm Rizmi</h1>
+          <p class="hero-desc">Saya adalah mahasiswa Teknik Komputer yang tertarik pada teknologi, pemrograman, dan jaringan komputer</p>
+          <a href="contact.html" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="portrait-frame"><img src="assets/profile.jpg" alt="Foto profil Nama Anda"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="social-row hero-social">
+        <a href="https://github.com/rizmijenbo" target="_blank" rel="noopener" aria-label="GitHub"><img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub"></a>
+        <a href="https://instagram.com/rizmijenbo14_" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram"></a>
+        <a href="https://youtube.com/@jenboch4466" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/ffffff" alt="YouTube"></a>
+      </div>
+    </div>
+  </section>
+
+<br><br>
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-tag">Keahlian</p>
+      <h2>Yang saya kuasai</h2>
+      <div class="skills-grid">
+        <div class="glass skill-card border-blue"><h3>Programming</h3><p>Java, Python, C++.</p></div>
+        <div class="glass skill-card border-crimson"><h3>Web Development</h3><p>HTML, CSS, JavaScript.</p></div>
+        <div class="glass skill-card border-blue"><h3>UI/UX Design</h3><p>-.</p></div>
+        <div class="glass skill-card border-crimson"><h3>Video Editing</h3><p>Capcut PC.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-tag">Karya</p>
+      <h2>Proyek pilihan</h2>
+      <div class="projects-grid">
+        <div class="glass project-card">
+          <div class="project-thumb"><img src="assets/project-1.jpg" alt="Dashboard Retail"></div>
+          <div class="project-body">
+            <h3>VR Global Seasons</h3>
+            <div class="tech-row"><span>React</span><span>Node.js</span></div>
+            <a href="https://pendidikanb.netlify.app/" class="project-link">Lihat demo →</a>
+          </div>
+        </div>
+        <div class="glass project-card">
+          
+          <div class="project-body"><div class="project-thumb"></div>
+            <h3>Belum tersedia</h3>
+            <div class="tech-row"><span>-</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <p class="section-tag">Layanan</p>
+      <h2>Yang bisa saya bantu</h2>
+      <div class="services-grid">
+        <div class="glass service-card"><h3>Web Development</h3><p>Website landing page sampai aplikasi web.</p></div>
+        <div class="glass service-card"><h3>Graphic Design</h3><p>Logo dan identitas visual brand.</p></div>
+        <div class="glass service-card"><h3>Video Editing</h3><p>Video promosi dan konten media sosial.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 <b>Rizmi</b>. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>

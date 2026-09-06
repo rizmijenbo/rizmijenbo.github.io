@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — Rizmi</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>halaman kontak</h1>
-    kontak saya : +6297739972323 <br>
-    <a href="index.html" >home</a> <a href="contact.html" >kontak</a> <a href="about.html" >tentang</a>
+
+<header class="nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Portfolio<span>.</span></a>
+    <nav class="nav-menu">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="index.html#projects">PROJECTS</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+    <label for="nav-toggle" class="hamburger" aria-label="Buka menu"><span></span><span></span><span></span></label>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="index.html#projects">PROJECTS</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container"><p class="section-tag">Kontak</p><h1>Mari bicarakan proyek Anda</h1></div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="glass contact-info-card"><p class="label">Email</p><p>Rizmijenbo14@email.com</p></div>
+      <div class="glass contact-info-card"><p class="label">WhatsApp</p><p>+62 851-5101-1933</p></div>
+      <div class="glass contact-info-card"><p class="label">Lokasi</p><p>Makassar, Sulawesi Selatan, Indonesia</p></div>
+
+      <div class="social-row" style="margin-top: 28px;">
+        <a href="https://github.com/rizmijenbo" target="_blank" rel="noopener" aria-label="GitHub"><img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub"></a>
+        <a href="https://instagram.com/rizmijenbo14_" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram"></a>
+        <a href="https://youtube.com/@jenboch4466" target="_blank" rel="noopener" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/ffffff" alt="YouTube"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 <b>Rizmi</b>. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
